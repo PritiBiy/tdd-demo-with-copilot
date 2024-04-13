@@ -11,4 +11,8 @@ class Cart {
         items.add(item)
     }
 
+    fun contains(item: Item): Boolean {
+        return items.contains(item)
+    }
+
 }
