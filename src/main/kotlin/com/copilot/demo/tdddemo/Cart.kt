@@ -7,7 +7,7 @@ class Cart {
         return items.isEmpty()
     }
 
-    fun addItem(item: Item) {
+    fun add(item: Item) {
         items.add(item)
     }
 
