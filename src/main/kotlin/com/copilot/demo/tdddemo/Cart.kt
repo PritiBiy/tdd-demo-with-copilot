@@ -15,4 +15,8 @@ class Cart {
         return items.contains(item)
     }
 
+    fun remove(item: Item) {
+        items.remove(item)
+    }
+
 }

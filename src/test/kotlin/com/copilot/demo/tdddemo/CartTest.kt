@@ -31,4 +31,17 @@ class CartTest {
         assert(cart.contains(item))
     }
 
+    // remove an existing item from the cart and check the cart does not contain the item
+    @Test
+    fun `should not contain item after removing an item`() {
+        val cart = Cart()
+        val item = Item("item1", 1)
+        cart.add(item)
+
+        cart.remove(item)
+
+        assert(!cart.contains(item))
+    }
+
+
 }
