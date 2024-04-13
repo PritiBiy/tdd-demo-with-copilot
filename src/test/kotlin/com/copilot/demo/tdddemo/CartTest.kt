@@ -11,5 +11,13 @@ class CartTest {
         assert(cart.isEmpty())
     }
 
+    //should not be empty after adding an item with new Item with name and quantity, do not add comments
+    @Test
+    fun `should not be empty after adding an item with new Item with name and quantity`() {
+        val cart = Cart()
+        cart.addItem(Item("item1", 1))
+
+        assert(!cart.isEmpty())
+    }
 
 }
